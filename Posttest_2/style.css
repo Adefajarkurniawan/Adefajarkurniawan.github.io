@@ -146,3 +146,19 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 480px) {
+    .payment div {
+        flex-basis: 100%; 
+    }
+
+    .resep {
+        width: 100%; 
+        padding: 15px; 
+    }
+
+    .menu-info img {
+        width: 40px; 
+        height: 40px;
+    }
+}
