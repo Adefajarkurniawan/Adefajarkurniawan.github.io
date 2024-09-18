@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Makanan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resep">
+        <div class="header">
+            <img src="asset/logo-resto.jpeg" alt="Logo Restaurant">
+            <h4>Bukti Pemesanan</h4>
+        </div>
+
+        <div class="details">
+            <p>Nama Pelayan: <strong>Ade Fajar Kurniawan</strong></p>
+            <p>Tanggal Pemesanan: <input type="date" name="tgl-pemesanan"></p>
+            <p>Nama Pemesan: <strong>Sapa Aja</strong></p>
+            <p>Alamat Pemesan: <strong>Jl. Lempake</strong></p>
+        </div>
+
+        <div class="items">
+            <div class="item">
+                <div class="menu-info">
+                    <img src="asset/nasi-goreng.jpeg" alt="Nasi Goreng">
+                    <span>Nasi Goreng Spesial</span>
+                </div>
+                <div class="price-info">
+                    <span>1 Porsi</span>
+                    <span>Rp 25.000</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="menu-info">
+                    <img src="asset/es-teh-manis.jpeg" alt="Es Teh Manis">
+                    <span>Es Teh Manis</span>
+                </div>
+                <div class="price-info">
+                    <span>1 Gelas</span>
+                    <span>Rp 5.000</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <p>Total Pemesanan: <span>Rp 30.000</span></p>
+            <p>Pajak: <span>Rp 2.000</span></p>
+            <p>Total Tagihan: <span>Rp 32.000</span></p>
+        </div>
+
+        <div class="payment">
+            <p>Metode Pembayaran</p> <br>
+            <div>
+                <input type="radio" name="payment" id="bca">
+                <label for="bca">Bank BCA</label>
+            </div>
+            <div>
+                <input type="radio" name="payment" id="bri">
+                <label for="bri">Bank BRI</label>
+            </div>
+            <div>
+                <input type="radio" name="payment" id="ovo">
+                <label for="ovo">OVO</label>
+            </div>
+            <div>
+                <input type="radio" name="payment" id="gopay">
+                <label for="gopay">GoPay</label>
+            </div>
+        </div>
+
+
+        <footer>
+            <ul>
+                <li>Nama: Ade Fajar Kurniawan</li>
+                <li>NIM: 2309106137</li>
+                <li>Praktikum Web: <a href="https://classroom.google.com/c/NzEwMjM1NjcxOTQw/a/NzA2MTI5MTczNjQz/details">Posttest 2</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
