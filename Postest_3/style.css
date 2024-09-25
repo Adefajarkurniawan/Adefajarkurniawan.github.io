@@ -1,0 +1,338 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+.light-mode header, 
+.light-mode footer, 
+.light-mode .popup-content {
+    background-color: #007BFF;
+    color: white;
+}
+
+.light-mode .hero {
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+.light-mode .about, 
+.light-mode .tools {
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Kartu Tools */
+.light-mode .tool-card {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+.light-mode .tool-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #007BFF;
+}
+
+.light-mode .tool-card img {
+    border-radius: 15px 15px 0 0;
+}
+
+.light-mode .theme-btn, 
+.light-mode .tool-card a {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.light-mode .theme-btn:hover, 
+.light-mode .tool-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+
+.dark-mode header, 
+.dark-mode footer, 
+.dark-mode .popup-content {
+    background-color: #333;
+    color: #d4d4d4;
+}
+
+.dark-mode .hero {
+    background-color: #333;
+    color: #d4d4d4;
+}
+
+.dark-mode .about, 
+.dark-mode .tools {
+    background-color: #252525;
+    color: #d4d4d4;
+}
+
+/* Kartu Tools */
+.dark-mode .tool-card {
+    background-color: #333;
+    color: #d4d4d4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+.dark-mode .tool-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border: 1px solid #00C1FF;
+}
+
+.dark-mode .tool-card img {
+    border-radius: 15px 15px 0 0;
+}
+
+.dark-mode .theme-btn, 
+.dark-mode .tool-card a {
+    background-color: #00C1FF;
+    color: #1e1e1e;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.dark-mode .theme-btn:hover, 
+.dark-mode .tool-card a:hover {
+    background-color: #0086cc;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0066cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 1.8em;
+    color: white;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+/* Theme Toggle Button */
+.theme-btn {
+    background: linear-gradient(135deg, #007BFF, #00C1FF);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.theme-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #0086cc);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    color: #333;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Tools and About Sections */
+.about, .tools {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #f0f2f5;
+}
+
+.about h2, .tools h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.about p, .tools p {
+    font-size: 1.1em;
+}
+
+/* Tools List */
+#ai-tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tool-card {
+    width: 280px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+}
+
+.tool-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.tool-card h3 {
+    font-size: 1.3em;
+    margin: 15px 0;
+    color: #007BFF;
+}
+
+.tool-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+.tool-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.tool-card a:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0066cc;
+    color: white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Popup Box Styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    width: 320px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #0066cc;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
