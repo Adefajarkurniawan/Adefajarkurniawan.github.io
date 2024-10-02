@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOLS AI Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="logo">
+            <h1>My AI Tools</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#ai-tools">Tools AI</a></li>
+                <li><a href="#about-me">Tentang Saya</a></li>
+                <li><button id="theme-toggle" class="theme-btn">Dark Mode</button></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <h2>Selamat Datang di Website Tools AI</h2>
+            <p>Menjelajahi teknologi AI yang berguna untuk meningkatkan produktivitas.</p>
+        </section>
+
+        <section id="ai-tools" class="tools">
+            <h2>Daftar Tools AI</h2>
+            <div id="ai-tools-list">
+               
+            </div>
+        </section>
+
+        <section id="about-me" class="about">
+            <h2>Tertarik Menggunakan AI Tools?</h2>
+            <p>Isi form di bawah ini untuk mendapatkan informasi terbaru tentang tools AI dan penawaran khusus!</p>
+
+            <form id="user-form" class="user-form" method="POST" action="data.php">
+                <h3>Daftarkan Minat Anda</h3>
+            
+                
+                <div class="form-box">
+                    <label for="name">Nama Lengkap:</label>
+                    <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap">
+                </div>
+            
+                <div class="form-box">
+                    <label for="email">Alamat Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Masukkan email">
+                </div>
+            
+                <div class="form-box">
+                    <label for="interest">Tools AI yang Diminati:</label>
+                    <select id="interest" name="interest" required>
+                        <option value="ChatGPT">ChatGPT</option>
+                        <option value="Gemini">Gemini</option>
+                        <option value="Claude AI">Claude AI</option>
+                        <option value="Blackbox">Blackbox</option>
+                        <option value="Perplexity AI">Perplexity AI</option>
+                    </select>
+                </div>
+            
+             
+                <div class="form-box">
+                    <label for="usage">Tujuan Menggunakan AI:</label>
+                    <input type="text" id="usage" name="usage" required placeholder="Misalnya, produktivitas, belajar, pekerjaan">
+                </div>
+            
+                
+                <div class="form-box">
+                    <label>
+                        <input type="checkbox" id="newsletter" name="newsletter"> Saya ingin menerima Email tentang Tools AI.
+                    </label>
+                </div>
+            
+                
+                <button type="submit" class="btn">Daftar Sekarang</button>
+            </form>
+            
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024. All rights reserved.</p>
+    </footer>
+
+   
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2>Informasi Tambahan</h2>
+            <p>Nama : Ade Fajar Kurniawan</p>
+            <p>Perguruan Tinggi : Universitas Mulawarman</p>
+            <p>Fakultas : Teknik</p>
+            <p>Program Studi : Informatika</p>
+            <p>NIM : 2309106137</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
